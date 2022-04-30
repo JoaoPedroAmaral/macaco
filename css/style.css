@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'roboto', sans-serif;
+	background: rgb(2,0,36);
+	background: linear-gradient(190deg, rgba(240, 240, 240, 100%), rgba(242, 153, 121, 100%));
+}
+
+#site{
+	font-family: arial, sans-serif;
+	font-size: 10px;
+}
+nav ul#menu{
+	/*background-color: #b7d996;*/
+	background-color: rgba(0,0,0,0.6);
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: 1s;
+}
+nav:hover ul#menu{
+	opacity: 1;
+}
+nav li{
+	display: inline;
+	line-height: 60px;
+}
+a:link, a:visited{
+	font-size: 1.9em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+	padding: 20px;
+	text-shadow: 1px 1px #000;
+}
+a:hover, a:active{
+	background-color: rgba(100,100,100,0.8);
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+
+#banner{
+	background-image: url("../images/3.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+}
+
+h1.destaque1{
+	text-align: center;
+	font-size: 6.0em;
+	color: rgb(196, 196, 196);
+	text-shadow: 3px 3px #000;
+	animation: rubberBand;
+	animation-duration: 2s;
+}
+h2.destaque2{
+	color: rgb(196, 196, 196);
+	text-shadow: 3px 3px #000;
+	text-align: center;
+	font-size: 5.0em;
+	padding-top: 400px;
+	animation: tada;
+	animation-duration: 5s;
+}
+
+h1{
+	color: #111;
+	text-shadow: 1px 1px #000;
+	font-size: 2.0;
+	padding: 30px 0;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+}
+#about{
+	/*background-color:#b7d996 ;*/
+	height: 100vh;
+	font-size: 2.0em;
+	text-align: justify;
+	padding: 50px;
+	color: #000;
+	border-top: solid #111;
+	text-shadow: 2px 2px #000;
+}
+
+#gallery{
+	/*background-color:#b3d962 ;*/
+	height: 100vh;
+	padding: 50px;
+	font-size: 2.0em;
+	text-align: center;
+	border-top: solid #111;
+	border-bottom: solid #111;
+}
+.galeria{
+	width: 350px;
+	margin: 20px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	box-shadow: 5px 5px 5px #000;
+}
+
+#contact{
+	/*background-color:#caf238 ;*/
+	 height: 100vh;
+	font-size: 2.0em;
+	padding: 50px;
+	text-align: center;
+	border-top: solid #111;
+}
+#banana{
+	text-align: center;
+	text-shadow: 2px 2px #000;
+}
+
+#contact label{
+	text-align:left;
+	margin-left: 50px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	color: #111;
+	text-shadow: 1px 1px #000;
+}
+#contact input, textarea{
+	width: 400px;
+	background-color: #ddd;
+	border: 0;
+	font-size: 1.0em;
+	padding: 5px;
+	border-bottom: 3px solid #353440;
+	box-shadow: 5px 5px #000;
+	outline: none;
+	font-family: 'Radio Canada', sans-serif;
+}
+#contact button{
+	display: block;
+	background-color: #aabee6;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px;
+	border: 0;
+	box-shadow: 5px 5px #000;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+#contact button:hover{
+	background-color:#fff;
+	color: #000;
+}
