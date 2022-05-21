@@ -19,8 +19,6 @@ body{
 nav ul#menu{
 	/*background-color: #b7d996;*/
 	background-color: rgba(0,0,0,0.6);
-	margin: 0;
-	padding: 0;
 	position: fixed;
 	width: 100%;
 	text-align: center;
@@ -83,10 +81,10 @@ h1{
 }
 #about{
 	/*background-color:#b7d996 ;*/
-	height: 100vh;
+	height: 100%;
 	font-size: 2.0em;
 	text-align: justify;
-	padding: 50px;
+	margin: 50px;
 	color: #000;
 	border-top: solid #111;
 	text-shadow: 2px 2px #000;
@@ -94,8 +92,8 @@ h1{
 
 #gallery{
 	/*background-color:#b3d962 ;*/
-	height: 100vh;
-	padding: 50px;
+	height: 100%;
+	margin: 50px;
 	font-size: 2.0em;
 	text-align: center;
 	border-top: solid #111;
@@ -107,13 +105,23 @@ h1{
 	border-radius: 10px;
 	border: 2px solid #fff;
 	box-shadow: 5px 5px 5px #000;
+	max-width: 100%;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.galeria:hover{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 #contact{
 	/*background-color:#caf238 ;*/
-	 height: 100vh;
+	height: 100%;
 	font-size: 2.0em;
-	padding: 50px;
+	margin: 50px;
 	text-align: center;
 	border-top: solid #111;
 }
@@ -132,6 +140,7 @@ h1{
 	color: #111;
 	text-shadow: 1px 1px #000;
 }
+
 #contact input, textarea{
 	width: 400px;
 	background-color: #ddd;
